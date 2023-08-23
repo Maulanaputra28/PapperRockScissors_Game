@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Pangolin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Mukta&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Rubik&display=swap" rel="stylesheet">
+    <title>MINI GAME</title>
+</head>
+<body>
+    <div class="homePage">
+        <p class="titleRegister">Welcome to RPS game.</p>
+        <div id="registerform">
+            <input type="text" placeholder="Username" id="username">
+            <button onclick="register()">Register</button>
+        </div>
+        <div id="notif"></div>
+    </div>
+    <div id="app">
+        <div id="profileUser">
+            <div>
+                <img src="wired-lineal-21-avatar (2).gif" alt="">
+                <div id="profilName"></div>
+            </div>
+                <div id="expUser">exp : </div>
+        </div>
+        <p class="title">
+            Rock,Papper,Scissors!
+        </p>
+        <div class="game">
+            <div class="score">
+                <div id="result"></div>
+                <p>Round : <span id="round"></span></p>
+            </div>
+
+            <div class="match">
+                <div class="user">
+                    <div id="usernameMatch"></div>
+                    <div id="desc"></div>
+                </div>
+
+                <div class="point">
+                    <div id="pointUser"></div>
+                    <h1>:</h1>
+                    <div id="pointBot"></div>
+                </div>
+                
+                <div class="bot">
+                    <p class="botName">MaulBot</p>
+                    <div id="botResult"></div>
+                </div>
+            </div>
+            <button class="restart" onclick="restart()">Restart</button>
+            <div class="button">
+                <div class="option" onclick="pickOption('✌')">✌</div>
+                <div class="option" onclick="pickOption('✊')">✊</div>
+                <div class="option" onclick="pickOption('🖐')">🖐</div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p id="textFooter">
+            thanks for playing
+        </p>
+        <button id="btnLogout" onclick="logout()">Logout</button>
+        <p id="copyright">
+            Copyright © 2023 - Maulana putra Pamungkas
+        </p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

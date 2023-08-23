@@ -1,0 +1,255 @@
+html, body, *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #F4F2DE;
+    --secondary: #A1CCD1;
+    --green: #A0D995;
+    --red: #E76161;
+    --light: #E9E8E8;
+    --dark: #393E46;
+}
+
+.homePage{
+    height: 100vh;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleRegister{
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 55px;
+    font-weight: 500;
+    color: var(--secondary);
+    margin: 25px;
+}
+
+input{
+    margin: 20px;
+    width: 300px;
+    height: 40px;
+}
+
+button{
+    font-family: 'Pangolin', cursive;
+    border-radius: 10px;
+    padding: 9px;
+    font-size: 15px;
+}
+
+button:hover{
+    background-color: var(--green);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s;
+    cursor: pointer;
+}
+
+#notif{
+    font-family: 'Pangolin', cursive;
+    font-size: 35px;
+}
+
+#app{
+    height: 100vh;
+    display: none;
+    background-color: var(--primary);
+}
+
+#profileUser{
+    font-family: 'Archivo', sans-serif;
+    position: relative;
+    right: -80%;
+    top: 28%;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+#profileUser>div{
+    display: flex;
+    align-items: center;
+}
+
+#profileUser img{
+    width: 20%;
+}
+
+.title{
+    font-size: 36px;
+    text-align: center;
+    margin: 5px;
+    color: var(--dark);
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.score{
+    font-family: 'Archivo', sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+#result{
+    font-size: 30px;
+}
+
+.match{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    font-family: 'Archivo', sans-serif;
+    margin-bottom: 10%;
+}
+
+.user{
+    text-align: center;
+    height: auto;
+    width: auto;
+    padding: 1%;
+}
+
+#usernameMatch{
+    margin: 10px 15px;
+}
+
+#desc{
+    font-size: 40px;
+}
+
+.point{
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pointUser, #pointBot{
+    font-size: 45px;
+    margin: 15px;
+}
+
+
+.bot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    height: auto;
+    width: auto;
+    padding: 1%;
+}
+
+.botName{
+    margin: 10px 15px
+}
+
+#botResult{
+    font-size: 35px;
+}
+
+.restart{
+    width: 100px;
+    position: relative;
+    right: -46%;
+    z-index: 5;
+}
+
+.restart:hover{
+    background-color: var(--secondary);
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.option{
+    font-size: 35px;
+    margin: 10px 15px;
+    padding: 20px;
+}
+
+.option:hover{
+    cursor: pointer;
+    background-color: var(--primary);
+    transition: cubic-bezier(0.215, 0.61, 0.355, 1) ease-in-out;
+    transform: scale(145%);
+    -webkit-transform: scale(145%);
+    -moz-transform: scale(145%);
+    -ms-transform: scale(145%);
+    -o-transform: scale(145%);
+    -webkit-transition: cubic-bezier(0.215, 0.61, 0.355, 1) ease-in-out;
+    -moz-transition: cubic-bezier(0.215, 0.61, 0.355, 1) ease-in-out;
+    -ms-transition: cubic-bezier(0.215, 0.61, 0.355, 1) ease-in-out;
+    -o-transition: cubic-bezier(0.215, 0.61, 0.355, 1) ease-in-out;
+}
+
+
+#footer{
+    background-color: var(--primary);
+    font-family: 'Archivo', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnLogout{
+    margin: 15px;
+}
+
+#btnLogout:hover{
+    background-color: var(--red);
+}
+
+#copyright{
+    position: relative;
+    top: 20%;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 576px) {
+    #registerform > button{
+        margin-left: 40%;
+    }
+    .titleRegister{
+        font-size: 25px;
+    }
+    #notif, #result, .title{
+        font-size: 20px;
+    }
+    .score{
+        font-size: 16px;
+    }
+    .match{
+        gap: 40px;
+    }
+    .restart{
+        right: -35%;
+    }
+    #profileUser{
+        display: none;
+    }
+}
